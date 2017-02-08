@@ -1,5 +1,6 @@
 
 1.	What is Basic steps writing selenium scripts starting from scratch?
+
 Ans:   a. Download JDK and JRE
            b. Update the Environmental variable 
            c. Download the Eclipse 
@@ -9,51 +10,90 @@ Ans:   a. Download JDK and JRE
           g. Update the POM.XML file and run Maven install
           h. Create the class 
           i. Write the test case of selenium. 
+	  
 Example :  package facebook_login;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestFB {
- public static void main(String[] args) throws InterruptedException {
-	  WebDriver driver=new FirefoxDriver();
-	   driver.get("https://www.facebook.com");
-	  driver.manage().window().maximize();
-         driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("xyz@ymail.com");
-	  driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("123");
-	  driver.findElement(By.xpath(".//*[@id='u_0_o']")).click();
-	   driver.close();}
+
+public static void main(String[] args) throws InterruptedException {
+
+WebDriver driver=new FirefoxDriver();
+
+driver.get("https://www.facebook.com");
+
+driver.manage().window().maximize();
+
+driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("xyz@ymail.com");
+
+driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("123");
+
+driver.findElement(By.xpath(".//*[@id='u_0_o']")).click();
+
+driver.close();}
+
 }
+
 2.	Explain how to do following in Selenium?
+
 a.	How do u handle dynamic elements without using XPath?
+
 Ans : By using id, cssname, name  locators 
+
 b.	What are the different types of driver implementation?
+
 Ans : ChromeDriver,FirefoxDriver,InternetExplorerDriver,SafariDriver
+
 c.	Timeouts in selenium support?
+
 Ans : Implicit wait and Explicit Wait 
+
 d.	How do you printout snapshot using Selenium Web Driver?
-           Ans :  WebDriver driver=new FirefoxDriver();
+
+Ans :  WebDriver driver=new FirefoxDriver();
 	   driver.get("https://www.facebook.com");
 
 e.	Different exception in selenium?
+
 ElementNotVisibleException,ErroeException,InvalidElementStateException.
+
 3.	Different Locator in Selenium and explain briefly?
+
 Ans : Id , css, xpath, name,classname 
+
 a.	Write the code for selector
+
 Ans : driver.findElement(By.xpath(“.//*[@id=’ap_name]”)).sendKeys(“Abrar”);
+
 b.	radio button
+
 Ans : driver.findElement(By.xpath(“.//*[@id=’ap_button]”)).click();
+
 c.	select box
+
 Ans: driver.findElement(By.xpath(“.//*[@id=’ap_checkbox]”)).click();
+
 d.	Selecting rows and printing table data
+
 Ans : driver.findElements(By.xpath("//*[@id='post-body 6522850981930750493']/div[1]/table/tbody/tr[1]/td")).size();
+
 e.	difference between findElement() findElements()
+
 Ans: findElement() -> returns single Web element
-        FindElements() -> returns List of Web elements
+
+FindElements() -> returns List of Web elements
+
 4.	Give Purpose of following Items?
+
 a.	ActionDriver -> the driver which performs some action..eg. FirefoxDriver 
+
 b.	Listener -> It defines a listeners of a test class.
+
 c.	Maven-> To fetch the jar files 
 d.	Jenkin-> It’s a continous integration tool which uses maven to build the jar file 
 e.	Log4j-> It’s a reporting tool 
