@@ -95,34 +95,67 @@ a.	ActionDriver -> the driver which performs some action..eg. FirefoxDriver
 b.	Listener -> It defines a listeners of a test class.
 
 c.	Maven-> To fetch the jar files 
-d.	Jenkin-> It’s a continous integration tool which uses maven to build the jar file 
-e.	Log4j-> It’s a reporting tool 
+
+d.	Jenkin-> It’s a continous integration tool which uses maven to build the jar file
+
+e.	Log4j-> It’s a reporting tool
+
 5.	Give the difference between them?
+
 a.	Methods of driver: Quit(), Close()
+
 Quit() -> It quits the web driver ; close() -> It close the current page 
-b.	Junit and Test NG?
-In Junit each test is independent of other test where as in TestNG  each test method is dependent on another .
+
+b.	Junit and TestNG?
+
+In Junit each test is independent of other test where as in TestNG  each test method is dependent on another.
+
 In TestNG we don’t need to extend the class where as in JUnit we need to extend the class
+
 c.	JXL and Apache POI?
+
 JXL doesnot support conditional formatting where as Apache POI supports
+
 JXL supports page set up  where as Apache POI doesnot 
+
 d.	IDE and RC
+
 IDE does not support parallel execution where as RC supports parallel execution 
+
 RC supports almost all browser where as IDE supports few browsers
+
 e.	WebDriver and GRID
+
 WebDriver is fast and automates the browsers faster than GRID.
+
 6.	Different Annotation of TestNG?
+
 @Test, @BeforMethod, @AfterMethod, @Listener,@Dataprovider
+
 7.	What are different jars you include and give the use of them.
+
 Selenium jar, TestNG jar, JXL Jar, Log4J jar,JAXB jar
+
 8.	What do you do following this in TestNG?
+
 a.	Passing parameter -> @Parameters
-b.	Groups the test -> @BeforeGroup , @AfterGroup 
+
+b.	Groups the test -> @BeforeGroup , @AfterGroup
+
 c.	skipping the tests -> @Test(Ignore)
+
 d.	Introducing dependency on tests -> @Test
+
 e.	Prioritizing these test? ->@Test(Priority=0)……….@Test(Priority=1)
+
 9.	explain Page object model components?
+
 POM components are : 
+
 1.Browser Creation  2. Identify the Elements 3. Set the data 4. Perform Action 5. Validation   6. Truncate the test 
+
 10.	Explain data driven framework and keyword driven framework?
-Data Driven Framework is the process of reading the data from the spread sheet in which we have the data in the stored in the form a spread sheet and the data is read using the JXL dependency.
+
+Data Driven Framework is the process of reading the data from the spread sheet in which we have the data in the stored in the 
+
+form a spread sheet and the data is read using the JXL dependency.
